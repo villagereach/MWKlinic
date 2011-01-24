@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2011-01-24" view-index="0" gantt-divider-location="597" resource-divider-location="459" version="2.0">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="Name" width="53" order="0"/>
+        <field id="1" name="Default role" width="46" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="SCOPING" color="#8cb6ce" meeting="false" start="2011-01-18" duration="12" complete="0" priority="1" expand="false">
+            <task id="2" name="SCOPING:  early requirements phase completed" color="#8cb6ce" meeting="false" start="2011-01-18" duration="10" complete="0" priority="1" expand="true"/>
+            <task id="3" name="SCOPING:  Hotline patient registration working with placeholder screens for remainder features" color="#8cb6ce" meeting="false" start="2011-01-26" duration="5" complete="0" priority="1" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="SCOPING:  Finalize physical architecture – comm strategy" color="#8cb6ce" meeting="false" start="2011-01-24" duration="6" complete="0" priority="1" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="SCOPING:  Motech decision (use it or code our own)" color="#8cb6ce" meeting="false" start="2011-01-25" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="6" name="SCOPING:  Concepts &amp; data model use determined (draft – defined)" color="#8cb6ce" meeting="false" start="2011-01-31" duration="3" complete="0" priority="1" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="SCOPING:  Notifier two-way to HUB API is designed in a good draft form" color="#8cb6ce" meeting="false" start="2011-01-28" duration="4" complete="0" priority="1" expand="true"/>
+        </task>
+        <task id="8" name="COMMUNICATIONS INFRASTRUCTURE/TELECOM/MESSAGE HUB" color="#8cb6ce" meeting="false" start="2011-01-24" duration="35" complete="0" priority="1" expand="true">
+            <task id="50" name="COM:  IntellIVR proposal and contract" color="#8cb6ce" meeting="false" start="2011-01-27" duration="8" complete="0" priority="1" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="COM:  IntellIVR in a dev mode with a sample config is installed at BHT (lamp stack, no telco connection yet, but with dummy xml interface to verify API)" color="#8cb6ce" meeting="false" start="2011-02-08" duration="1" complete="0" priority="1" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="COM:  SMS Solution defined and designed" color="#8cb6ce" meeting="false" start="2011-02-01" duration="1" complete="0" priority="1" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="COM: Working message hub (in dev) and sending to API XML" color="#8cb6ce" meeting="false" start="2011-02-09" duration="20" complete="0" priority="1" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="COM: Communications Hub is operational in “test mode” (testable SMS, Out-calls, but independent of DH server) " color="#8cb6ce" meeting="false" start="2011-03-09" duration="1" complete="0" priority="1" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="COM/HOTLINE:  Notifier to END USER (through com_hub) tests complete" color="#ff0000" meeting="true" start="2011-03-10" duration="1" complete="0" thirdDate="2011-04-22" thirdDate-constraint="0" priority="1" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" name="COM: Phone tree fully defined (structure and script contents) emily signs off" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="COM: Phone tree content recorded and uploaded to tree" color="#8cb6ce" meeting="false" start="2011-01-25" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="16" name="COM: Communication arrangements completed for E1, SMS, GPRS x3, for production and ongoing test (contracts, payments, ongoing)" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="17" name="COM:  Reports" color="#8cb6ce" meeting="false" start="2011-03-11" duration="1" complete="0" priority="1" expand="true"/>
+        </task>
+        <task id="18" name="HOTLINE" color="#8cb6ce" meeting="false" start="2011-01-24" duration="11" complete="0" priority="1" expand="true">
+            <task id="19" name="18,&quot;HOTLINE: Scheduler working for multiple clinics and web out XML &quot;,3,&quot;Week 6&quot;,," color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="19,&quot;HOTLINE: Rules engine (NOTIFIER) tips and alerts reads motech like XML, generates messages matching API &quot;,,,," color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="HOTLINE:  Full app functional at model/controller level with draft view (UI)" color="#8cb6ce" meeting="false" start="2011-02-03" duration="1" complete="0" priority="1" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" name="HOTLINE:  UI for H.S.A. User is FINALIZED" color="#8cb6ce" meeting="false" start="2011-01-25" duration="1" complete="0" priority="1" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" name="HOTLINE:  exact printed script approved" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" name="HOTLINE:  UI For admin finalized" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="25" name="HOTLINE:  release candidate" color="#0000ff" meeting="true" start="2011-02-04" duration="1" complete="0" thirdDate="2011-04-18" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" name="HOTLINE:  Admin reports &quot;,24,,," color="#8cb6ce" meeting="false" start="2011-02-07" duration="1" complete="0" priority="1" expand="true"/>
+        </task>
+        <task id="27" name="HEALTH UNIT APP" color="#8cb6ce" meeting="false" start="2011-01-24" duration="56" complete="0" priority="1" expand="false">
+            <task id="28" name="HEALTH UNIT APP:  client browser downloads appointment schedule on J2+" color="#8cb6ce" meeting="false" start="2011-01-25" duration="10" complete="0" priority="1" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" name="HEALTH UNIT APP:  Schedule_reply (attendance record and upload) working in dev &quot;,27,,," color="#8cb6ce" meeting="false" start="2011-02-08" duration="5" complete="0" priority="1" expand="true"/>
+            <task id="30" name="HEALTH UNIT APP: Bar code read and print in dev" color="#8cb6ce" meeting="false" start="2011-01-24" duration="5" complete="0" priority="1" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" name="HEALTH UNIT APP:   Other client features explored and decided (defines RC)" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="32" name="HEALTH UNIT APP:   release candidate" color="#00cc33" meeting="true" start="2011-04-11" duration="1" complete="0" priority="2" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="HEALTH UNIT APP:  Client other client features working @ test (include in RC?) &quot;,,,," color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="34" name="HARDWARE DEV" color="#8cb6ce" meeting="false" start="2011-01-24" duration="40" complete="0" priority="1" expand="false">
+            <task id="35" name="HARDWARE:  Determine deployment characteristics (e.g. power)" color="#8cb6ce" meeting="false" start="2011-02-01" duration="4" complete="0" priority="1" expand="true"/>
+            <task id="36" name="HARDWARE:  Create server with GPRS solution – one permanently in test bed" color="#8cb6ce" meeting="false" start="2011-01-24" duration="40" complete="0" priority="1" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="37" name="HARDWARE:  Create J2+ (J2 with GPRS) – one permanently in test bed (5 total?)" color="#8cb6ce" meeting="false" start="2011-01-24" duration="40" complete="0" priority="1" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="38" name="HARDWARE DEPLOY" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="false">
+            <task id="39" name="HARDWARE:  All hardware installed and tested at District Hospital (includes connection to BART primary DB) with GPRS connection functional" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true"/>
+            <task id="40" name="HARDWARE:  All hardware installed and tested Health Units with GPRS connection functional" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" thirdDate="2011-05-05" thirdDate-constraint="0" priority="1" expand="true"/>
+        </task>
+        <task id="41" name="TESTING" color="#8cb6ce" meeting="false" start="2011-01-24" duration="59" complete="0" priority="1" expand="false">
+            <task id="42" name="TESTING:  Design and agree on testbed protocol (dev team first, then deployment team)" color="#8cb6ce" meeting="false" start="2011-01-31" duration="5" complete="0" priority="1" expand="true"/>
+            <task id="43" name="TESTING: Establish a full test bed at Baobab Lilongwe office with hardware" color="#8cb6ce" meeting="false" start="2011-03-21" duration="4" complete="0" priority="1" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" name="TESTING:  Simulate live message sending over Telco/IVR/SMS in test bed (END TO END testing with DH server in testbed)" color="#8cb6ce" meeting="false" start="2011-04-12" duration="3" complete="0" priority="1" expand="true"/>
+            <task id="45" name="TESTING:  Repeat end to end testing in the field locations" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true"/>
+        </task>
+        <task id="46" name="BART " color="#8cb6ce" meeting="false" start="2011-01-24" duration="2" complete="0" priority="1" expand="false">
+            <task id="48" name="BART 2 stable for ART and ODP for Balaka District Deployment" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" name="BART:  Bart2 is operational at District Hospital (as opposed to merely installed) ?" color="#8cb6ce" meeting="false" start="2011-01-25" duration="1" complete="0" priority="1" expand="true"/>
+        </task>
+        <task id="49" name="PRODUCTION:  Go live date" color="#8cb6ce" meeting="false" start="2011-01-24" duration="1" complete="0" priority="1" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Dave" function="Default:0" contacts="dave@microenergycredits.com" phone=""/>
+        <resource id="1" name="Baobab Dev" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="James" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="1" width="504"/>
+        <displaycolumn property-id="tpd4" order="4" width="101"/>
+        <displaycolumn property-id="tpd5" order="5" width="215"/>
+        <displaycolumn property-id="tpd9" order="2" width="87"/>
+        <displaycolumn property-id="tpd10" order="0" width="96"/>
+        <displaycolumn property-id="tpd6" order="3" width="79"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
