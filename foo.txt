@@ -1,1 +1,1 @@
-redmine testing3
+redmine testing3 commit msgs
